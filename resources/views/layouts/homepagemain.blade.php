@@ -59,12 +59,14 @@
                             <span class="icon-bar"></span>
                           </button>
                           <a class="navbar-brand" href="/">Nakuru Properties</a>
-                          <a style="margin-left: 15px; margin-top: 4px" class="btn btn-primary btn-default" data-toggle="modal" data-target="#noticeModal"><i class="material-icons">search</i> Search</a>
                         </div>
 
 
                           <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                           <ul class="nav navbar-nav">
+                          <li>
+                          <a style="margin-left: 15px; margin-top: 4px" class="btn btn-primary btn-default" data-toggle="modal" data-target="#noticeModal"><i class="material-icons">search</i> Search</a>
+                          </li>
                             <li>
                                 <a href="{{ route('login') }}">Login</a>
                             </li>
