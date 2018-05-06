@@ -84,7 +84,7 @@
                                          </span>
                                          @endif
                                         </div>
-                                        <div class="input-group dropup{{ $errors->has('gender') ? ' has-error' : '' }}">
+                                        <div>
                                         <div class="input-group dropup{{ $errors->has('gender') ? ' has-error' : '' }}">
                                         <span class="input-group-addon">
                                                 <i class="fa fa-venus-mars" style="font-size: 20px; font-weight: bold;"></i>
@@ -140,7 +140,7 @@
                             </div>
                         </div>
                          <div class="col-md-5">
-                                <div class="info info-horizontal" style="margin-left: 10px">
+                                <div class="info info-horizontal" style="margin-left: 15px">
                                     <div class="icon icon-rose">
                                         <i class="material-icons">timeline</i>
                                     </div>
@@ -165,7 +165,7 @@
                                     </div>
                                 </div> -->
 
-                                <div class="info info-horizontal" style="margin-left: 10px; margin-right: 10px">
+                                <div class="info info-horizontal" style="margin-left: 15px">
                                     <div class="icon icon-info">
                                         <i class="material-icons">group</i>
                                     </div>
