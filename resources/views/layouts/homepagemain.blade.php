@@ -100,9 +100,9 @@
     </div>
   </div>
 </div>
-  <div class="main main-raisedresults">
+  
        @yield('content')
-    </div>
+  
 
    
     <!--     *********    END PRICING 5      *********      -->
