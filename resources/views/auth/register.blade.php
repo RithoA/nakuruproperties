@@ -141,10 +141,10 @@
                         </div>
                          <div class="col-md-5">
                                 <div class="info info-horizontal" style="margin-left: 15px">
+                                    <div class="description">
                                     <div class="icon icon-rose">
                                         <i class="material-icons">timeline</i>
                                     </div>
-                                    <div class="description">
                                         <h4 class="info-title">Our Vision</h4>
                                         <p class="description">
                                             We aim transform the real estate industry through commitment to positive change and innovation that redefines the quality and consistency of service that clients can expect from a property manager.
@@ -166,10 +166,10 @@
                                 </div> -->
 
                                 <div class="info info-horizontal" style="margin-left: 15px">
+                                    <div class="description">
                                     <div class="icon icon-info">
                                         <i class="material-icons">group</i>
                                     </div>
-                                    <div class="description">
                                         <h4 class="info-title">To our Clients</h4>
                                         <p class="description">
                                             We provide top quality professional service and support to a wide range of residential real estate owners and commercial investors in an effort to help the many individual communities in our portfolio be sought after places to live.
