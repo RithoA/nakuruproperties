@@ -139,8 +139,8 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-md-5 col-md-offset-1">
-                                <div class="info info-horizontal" style="margin-left: 10px; margin-right: 10px">
+                         <div class="col-md-5">
+                                <div class="info info-horizontal" style="margin-left: 10px">
                                     <div class="icon icon-rose">
                                         <i class="material-icons">timeline</i>
                                     </div>
