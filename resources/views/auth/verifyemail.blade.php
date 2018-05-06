@@ -292,7 +292,7 @@
                     <tr>
                       <td>
                         <p>Hi {{$user->username}},</p>
-                        <p>Welcome to Nakuru Properties, we are looking forward to working with you. Please click on the button below to complete registeration. Enjoy your stay. Thank You. </p><i class="fa fa-smile-o"></i>
+                        <p>Welcome to Nakuru Properties, we are looking forward to working with you. Please click on the button below to complete registration. Enjoy your stay and Thank You for choosing Us. </p><i class="fa fa-smile-o"></i>
                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                           <tbody>
                             <tr>
