@@ -56,8 +56,8 @@
                                         <p class="card-description">
                                             You have no favorite posts at the moment, how about you go through our listings and find what you like <i class="fa fa-smile-o"></i>
                                         </p>
-                                        <a href="#pablo" class="btn btn-primary btn-round">
-                                            <i class="material-icons">search</i> Search People
+                                        <a class="btn btn-primary btn-round">
+                                            <i class="material-icons">search</i>
                                         </a>
                                     </div>
                                     </div>

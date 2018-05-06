@@ -23,7 +23,7 @@
                                     <span class="input-group-addon">
                                         <i class="material-icons">email</i>
                                     </span>
-                                    <input type="email" name="email" value="{{ old('email') }}" class="form-control" placeholder=" Email..." required autofocus>
+                                    <input class="form-control" type="email" name="email" value="{{ old('email') }}"  placeholder=" Email..." required>
                                      @if ($errors->has('email'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -34,7 +34,7 @@
                                     <span class="input-group-addon">
                                         <i class="material-icons">lock_outline</i>
                                     </span>
-                                    <input id="password" type="password" placeholder=" Password..." class="form-control" name="password" required/>
+                                    <input class="form-control" id="password" type="password" placeholder=" Password..."name="password" required/>
                                     @if ($errors->has('password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
