@@ -15,7 +15,7 @@ class ProfilesTableSeeder extends Seeder
             array(
                 array(
                      'user_id' => '1',
-                     'coverimage' => 'public/images/defaults/coverimage/bg7.jpg',
+                     'coverimage' => 'public/images/defaults/bg7.jpg',
                 )
 //////////////// , then next array
             )

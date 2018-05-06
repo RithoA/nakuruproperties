@@ -73,11 +73,11 @@ class RegisterController extends Controller
         $type = 'client';
         if($data['gender']){
 
-            $avatar = 'public/images/defaults/avatars/male.png';
+            $avatar = 'public/images/defaults/male.png';
         }
         else{
 
-            $avatar = 'public/images/defaults/avatars/female.png';
+            $avatar = 'public/images/defaults/female.png';
         }
 
         $user = User::create([
@@ -91,7 +91,7 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
 
-        $coverimage = 'public/images/defaults/coverimage/bg7.jpg';
+        $coverimage = 'public/images/defaults/bg7.jpg';
          Profile::create([
             'user_id' => $user->id,
             'coverimage' => $coverimage,

@@ -17,7 +17,7 @@ class UsersTableSeeder extends Seeder
             'username' => 'RithoA',
             'email' => 'rithoandrew@gmail.com',
             'slug' => str_slug('rithoandrew@gmail.com'),
-            'avatar' => 'public/images/avatar/user.png',
+            'avatar' => 'public/images/defaults/admin.png',
             'gender' => '1',
             'type' => 'admin',
             'verifyToken' => NULL,
