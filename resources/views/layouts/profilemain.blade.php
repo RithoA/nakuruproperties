@@ -22,7 +22,7 @@
 
 <body class="profile-page">
 
-    <nav class="navbar navbar-primary navbar-fixed-top" id="sectionsNav">
+     <nav class="navbar navbar-primary navbar-transparent navbar-fixed-top navbar-color-on-scroll" id="sectionsNav">
         <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">

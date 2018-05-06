@@ -20,7 +20,7 @@
 </head>
 
 <body class="signup-page">
-    <nav class="navbar navbar-primary navbar-fixed-top">
+     <nav class="navbar navbar-primary navbar-transparent navbar-fixed-top navbar-color-on-scroll" id="sectionsNav">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -53,45 +53,9 @@
                     <div class="card card-signup">
                         <h2 class="card-title text-center">Register</h2>
                         <div class="row">
+                           
                             <div class="col-md-5 col-md-offset-1">
-                                <div class="info info-horizontal" style="margin-left: 10px; margin-right: 10px">
-                                    <div class="icon icon-rose">
-                                        <i class="material-icons">timeline</i>
-                                    </div>
-                                    <div class="description">
-                                        <h4 class="info-title">Our Vision</h4>
-                                        <p class="description">
-                                            We aim transform the real estate industry through commitment to positive change and innovation that redefines the quality and consistency of service that clients can expect from a property manager.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="info info-horizontal">
-                                    <div class="icon icon-primary">
-                                        <i class="material-icons">code</i>
-                                    </div>
-                                    <div class="description">
-                                        <h4 class="info-title">Fully Coded in HTML5</h4>
-                                        <p class="description">
-                                            We've developed the website with HTML5 and CSS3. The client has access to the code using GitHub.
-                                            We've developed the website with HTML5 and CSS3. The client has access to the code using GitHub
-                                        </p>
-                                    </div>
-                                </div> -->
-
-                                <div class="info info-horizontal" style="margin-left: 10px; margin-right: 10px">
-                                    <div class="icon icon-info">
-                                        <i class="material-icons">group</i>
-                                    </div>
-                                    <div class="description">
-                                        <h4 class="info-title">To our Clients</h4>
-                                        <p class="description">
-                                            We provide top quality professional service and support to a wide range of residential real estate owners and commercial investors in an effort to help the many individual communities in our portfolio be sought after places to live.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
+                             <div class="info info-horizontal" style="margin-left: 10px; margin-right: 10px">
                                 <form class="form" role="form" method="POST" action="{{ route('register') }}">
                                 {{ csrf_field() }}
                                     <div class="card-content">
@@ -172,8 +136,47 @@
                                         <i class="fa fa-google"></i>
                                     </button>
                                 </div> -->
+                                </div>
                             </div>
                         </div>
+                         <div class="col-md-5 col-md-offset-1">
+                                <div class="info info-horizontal" style="margin-left: 10px; margin-right: 10px">
+                                    <div class="icon icon-rose">
+                                        <i class="material-icons">timeline</i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Our Vision</h4>
+                                        <p class="description">
+                                            We aim transform the real estate industry through commitment to positive change and innovation that redefines the quality and consistency of service that clients can expect from a property manager.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="info info-horizontal">
+                                    <div class="icon icon-primary">
+                                        <i class="material-icons">code</i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Fully Coded in HTML5</h4>
+                                        <p class="description">
+                                            We've developed the website with HTML5 and CSS3. The client has access to the code using GitHub.
+                                            We've developed the website with HTML5 and CSS3. The client has access to the code using GitHub
+                                        </p>
+                                    </div>
+                                </div> -->
+
+                                <div class="info info-horizontal" style="margin-left: 10px; margin-right: 10px">
+                                    <div class="icon icon-info">
+                                        <i class="material-icons">group</i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">To our Clients</h4>
+                                        <p class="description">
+                                            We provide top quality professional service and support to a wide range of residential real estate owners and commercial investors in an effort to help the many individual communities in our portfolio be sought after places to live.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
 
                 </div>
