@@ -4,7 +4,7 @@
 
        <div id="app">
        <div class="blogs-3">
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding-right: 5px;padding-left: 5px; margin-left: auto;margin-right: auto;">
         <div class="col-md-6 col-md-offset-2">
 
                  </div>
