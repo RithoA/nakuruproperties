@@ -3,7 +3,7 @@
 @section('content')
 
        <div id="app">
-       <div class="blogs-3">
+      
         <div class="container-fluid">
         <div class="col-md-6 col-md-offset-2">
         <div class="card">
@@ -252,7 +252,7 @@
                         @endforeach
                     </div>
                     </div>
-                </div>
+                
 
             </div>
         </div>
