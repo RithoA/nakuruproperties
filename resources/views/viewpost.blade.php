@@ -4,18 +4,9 @@
 
        <div id="app">
        <div class="blogs-3">
-        <div class="container-fluid" style="padding-right: 5px;padding-left: 5px">
+        <div class="container-fluid">
         <div class="col-md-6 col-md-offset-2">
-        <div class="card">
-                                    <!-- <div class="card-content content-info">
-                                        <h4 class="card-title">
-                                            <a href="#pablo">"Real estate is an imperishable asset, ever increasing in value. It is the most solid security that human ingenuity has devised. It is the basis of all security and about the only indestructible security."</a>
-                                        </h4>
-                                        <h5 class="category-social">
-                                            John Paulson
-                                        </h5>
-                              </div> -->
-                       </div>
+
                  </div>
                  <div class="col-md-6 col-md-offset-2">       
                      <div class="row">
