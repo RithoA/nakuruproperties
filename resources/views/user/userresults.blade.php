@@ -12,12 +12,12 @@
                 <div class="col-md-10 col-md-offset-1" style="margin-top: 10px">
                 <div class="card">
                                     <div class="card-content content-info">
-                                        <h5 class="category-social">
-                                            <i class="fa fa-google"></i> Google Advert
-                                        </h5>
                                         <h4 class="card-title">
-                                            <a href="#pablo">"You Don't Have to Sacrifice Joy to Build a Fabulous Business and Life"</a>
+                                            <a href="#pablo">"Owning a home is a keystone of wealth… both financial affluence and emotional security"</a>
                                         </h4>
+                                        <h5 class="category-social">
+                                            Suze Orman
+                                        </h5>
                                         </div>
                               </div>
  <div id="app">

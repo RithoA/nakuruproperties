@@ -1,4 +1,4 @@
-@extends('layouts.homepagemain')
+@extends('layouts.profilemain')
 
 @section('content')
 
@@ -7,14 +7,14 @@
         <div class="container-fluid">
         <div class="col-md-6 col-md-offset-2">
         <div class="card">
-                                    <div class="card-content content-info">
-                                        <h5 class="category-social">
-                                            <i class="fa fa-google"></i> Google Advert
-                                        </h5>
+                                    <!-- <div class="card-content content-info">
                                         <h4 class="card-title">
-                                            <a href="#pablo">"You Don't Have to Sacrifice Joy to Build a Fabulous Business and Life"</a>
+                                            <a href="#pablo">"Real estate is an imperishable asset, ever increasing in value. It is the most solid security that human ingenuity has devised. It is the basis of all security and about the only indestructible security."</a>
                                         </h4>
-                              </div>
+                                        <h5 class="category-social">
+                                            John Paulson
+                                        </h5>
+                              </div> -->
                        </div>
                  </div>
                  <div class="col-md-6 col-md-offset-2">       
@@ -182,12 +182,12 @@
                     <div class="col-md-12">
                         <div class="card">
                                     <div class="card-content content-info">
-                                        <h5 class="category-social">
-                                            <i class="fa fa-google"></i> Google Advert
-                                        </h5>
                                         <h4 class="card-title">
-                                            <a href="#pablo">"You Don't Have to Sacrifice Joy to Build a Fabulous Business and Life"</a>
+                                            <a href="#pablo">"Real estate is an imperishable asset, ever increasing in value. It is the most solid security that human ingenuity has devised. It is the basis of all security and about the only indestructible security."</a>
                                         </h4>
+                                        <h5 class="category-social">
+                                            John Paulson
+                                        </h5>
                          </div>
                        </div>
                     </div>

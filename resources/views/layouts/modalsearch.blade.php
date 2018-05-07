@@ -18,8 +18,8 @@
 							</div>
 							<div class="row">
 							<div class="col-md-10 col-md-offset-1">
-									<select class="selectpicker" id="towns" name="town" data-style="form-control" title="Town">
-										<option disabled> Select Town</option>
+									<select class="selectpicker" id="towns" name="town" data-style="form-control" title="Town/Region">
+										<option disabled> Select Town/Region</option>
 									</select>
 						   </div>
 							</div>

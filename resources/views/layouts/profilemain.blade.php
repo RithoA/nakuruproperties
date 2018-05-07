@@ -18,6 +18,12 @@
     <!-- CSS Files -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/material-kit.css?v=1.1.0" rel="stylesheet"/>
+    <script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6545636130115851",
+    enable_page_level_ads: true
+  });
+</script>
 </head>
 
 <body class="profile-page">
@@ -79,38 +85,190 @@
     <!--     *********    END PRICING 5      *********      -->
 </body>
     <!--   Core JS Files   -->
-    <script type="text/javascript" src="{{ asset('/assets/js/jquery.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/assets/js/bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/assets/js/material.min.js') }}"></script>
+     <script src="{{ asset('/js/app.js') }}"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!--    Plugin for Date Time Picker and Full Calendar Plugin   -->
-    <script type="text/javascript" src="{{ asset('/assets/js/moment.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('/assets/js/bootstrap.min.js') }}"></script> -->
+  <script type="text/javascript" src="{{ asset('/assets/js/material.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <!-- <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script> -->
+  <!--  Charts Plugin -->
+  <script type="text/javascript" src="{{ asset('/assets/js/chartist.min.js') }}"></script>
 
-    <!--    Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/   -->
-    <script type="text/javascript" src="{{ asset('/assets/js/nouislider.min.js') }}"></script>
+  <!--  Notifications Plugin    -->
+  <script type="text/javascript" src="{{ asset('/assets/js/bootstrap-notify.js') }}"></script>
 
-    <!--    Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker   -->
-    <script type="text/javascript" src="{{ asset('/assets/js/bootstrap-datetimepicker.js') }}"></script>
+  <!--    Plugin for Date Time Picker and Full Calendar Plugin   -->
+  <script type="text/javascript" src="{{ asset('/assets/js/moment.min.js') }}"></script>
 
-    <!--    Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-    <script type="text/javascript" src="{{ asset('/assets/js/bootstrap-selectpicker.js') }}"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/   -->
+  <script type="text/javascript" src="{{ asset('/assets/js/nouislider.min.js') }}"></script>
 
-    <!--    Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/  -->
-    <script type="text/javascript" src="{{ asset('/assets/js/bootstrap-tagsinput.js') }}"></script>
+  <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker   -->
+  <script type="text/javascript" src="{{ asset('/assets/js/bootstrap-datetimepicker.js') }}"></script>
 
-    <!--    Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput   -->
-    <script type="text/javascript" src="{{ asset('/assets/js/jasny-bootstrap.min.js') }}"></script>
+  <!--  Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script type="text/javascript" src="{{ asset('/assets/js/bootstrap-selectpicker.js') }}"></script>
 
-    <!--    Plugin For Google Maps   -->
-    <script  type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!--  Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/  -->
+  <script type="text/javascript" src="{{ asset('/assets/js/bootstrap-tagsinput.js') }}"></script>
 
-    <!--    Plugin for 3D images animation effect, full documentation here: https://github.com/drewwilson/atvImg    -->
-    <script type="text/javascript" src="{{ asset('/assets/js/atv-img-animation.js') }}"></script>
+  <!--  Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput   -->
+  <script type="text/javascript" src="{{ asset('/assets/js/jasny-bootstrap.min.js') }}"></script>
 
-    <!--    Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc    -->
-    <script type="text/javascript" src="{{ asset('/assets/js/material-kit.js?v=1.1.0') }}"></script>
+  <!--    Plugin For Google Maps   -->
 
-    <!-- Demo Purpose, JS For Demo Purpose, Don't Include it in your project -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!--    Plugin for 3D images animation effect, full documentation here: https://github.com/drewwilson/atvImg    -->
+  <script type="text/javascript" src="{{ asset('/assets/js/atv-img-animation.js') }}"></script>
+
+  <!--    Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc    -->
+
+  <script type="text/javascript" src="{{ asset('/assets/js/material-kit.js?v=1.1.0') }}"></script>
+    <!-- Material Dashboard javascript methods -->
+  <script type="text/javascript" src="{{ asset('/assets/js/material-dashboard.js') }}"></script>
+    
+
+
+    <script type="text/javascript">
+        var $section_features = '';
+        $().ready(function(){
+
+        });
+    </script>
+
+    <script type="text/javascript">
+    
+   $(document).ready(function() {
+  
+
+        $.ajax({
+            type: 'get',
+            url: '/get/categories',
+            dataType: "json",
+            success: function(categories) {
+            $('#categories').empty();
+
+
+            $.each(categories, function (i, item) {
+           $('#categories').append($('<option>', { 
+                       value: item.id,
+                        text: item.name,
+                        html: item[i]
+                         }));
+                               })
+           $('#categories').selectpicker('refresh');
+                         }
+
+                  });
+
+            $.ajax({
+            type: 'get',
+            url: '/get/tags',
+            dataType: "json",
+            success: function(tags) {
+            $('#tags').empty();
+
+
+            $.each(tags, function (i, item) {
+           $('#tags').append($('<option>', { 
+                       value: item.id,
+                        text: item.name,
+                        html: item[i]
+                         }));
+                               })
+           $('#tags').selectpicker('refresh');
+                         }
+
+                  });
+
+
+             $.ajax({
+            type: 'get',
+            url: '/get/towns',
+            dataType: "json",
+            success: function(towns) {
+            // console.log(towns);
+            $('#towns').empty();
+
+
+            $.each(towns, function (i, item) {
+           $('#towns').append($('<option>', { 
+                       value: item.id,
+                        text: item.name,
+                        html: item[i]
+                         }));
+                               })
+           $('#towns').selectpicker('refresh');
+                         }
+
+                  });
+
+            $('#towns').on('change', function() {
+
+            var townID = $(this).val();
+            if(townID) {
+            $.ajax({
+            type: 'get',
+            url: '/newpost/location/'+townID,
+            dataType: "json",
+            success: function(location) {
+            $('#locations').empty();
+
+
+            $.each(location, function (i, item) {
+           $('#locations').append($('<option>', { 
+                       value: item.id,
+                        text: item.name,
+                        html: item[i]
+                         }));
+                               })
+           $('#locations').selectpicker('refresh');
+                         }
+
+                  });
+
+            }else{
+
+                $('#locations').empty();
+
+            }
+
+           });
+
+
+            $('.searchmodal').on('click', '.searchquery', function() {
+        console.log('response');
+        $.ajax({
+            type: 'post',
+            url: '/searchresults',
+            data: {
+                '_token': $('input[name=_token]').val(),
+                'category': $("#categories").val(),
+                'town': $("#towns").val(),
+                'location': $("#locations").val(),
+                'tag': $("#tags").val(),
+                'min': $('#min').val(),
+                'max': $('#max').val()
+            },
+            success: function(results) {
+
+                console.log(results);
+                 $('.yield').remove();
+                 $('#results').empty();
+                 $('#resultstemplate').show();
+                 $('#results').html(results);
+               //  $.each(results, function (i, item) {
+               // $('#results').append("<div class='card card-plain card-blog'><div class='row'><div class='col-md-4'><div class='card-image'><a href='/property/"+item.slug+"'><div class='atvImg'><img class='img' src="  + item.coverimage+  " /></div></a><div class='card-icon'><i class='material-icons'>play_circle_outline</i></div></div></div><div class='col-md-8'><h6 class='category text-info'></h6><h3 class='card-title'><a>" + item.title+  "</a></h3><p class='card-description'>" + item.description+   "<a href='/property/"+item.slug+"'> Read More </a></p></div></div> </div>");  
+               //                 })
+
+                }
+        });
+    });
+
+             });
+
+  </script>
 
 </html>

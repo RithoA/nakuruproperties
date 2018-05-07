@@ -162,7 +162,7 @@
                                     {{$posts->links()}}
                                     </ul>
                  </div>
-                 <div class="container-fluid">
+                 <!-- <div class="container-fluid">
                                      <div class="col-md-3">
                                     <div class="card">
                                     <div class="card-content content-info">
@@ -225,7 +225,7 @@
                                     </div>
                                     </div>
                                     </div>
-                    </div> 
+                    </div>  -->
         </div>
       </div>
     </div>

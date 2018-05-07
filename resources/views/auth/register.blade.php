@@ -147,7 +147,7 @@
                                     </div>
                                         <h4 class="info-title">Our Vision</h4>
                                         <p class="description">
-                                            We aim transform the real estate industry through commitment to positive change and innovation that redefines the quality and consistency of service that clients can expect from a property manager.
+                                            We aim to transform the real estate industry through commitment to positive change and innovation that redefines the quality and consistency of service that clients can expect from a property manager.
                                         </p>
                                     </div>
                                 </div>
