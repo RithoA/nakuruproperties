@@ -4,7 +4,7 @@
 
        <div id="app">
        <div class="blogs-3">
-        <div class="container" style="padding-right: 3px;padding-left: 3px">
+        <div class="container-fluid" style="padding-right: 5px;padding-left: 5px">
         <div class="col-md-6 col-md-offset-2">
         <div class="card">
                                     <!-- <div class="card-content content-info">
