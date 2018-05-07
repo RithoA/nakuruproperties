@@ -17,7 +17,11 @@
                                             </div>
                                         </a>
                                         <div class="card-icon">
-                                                 <i class="material-icons">play_circle_outline</i>
+                                        @if ($item->type == 'Prime')
+                                                 <i class="material-icons">grade</i>
+                                        @else
+                                                <i class="material-icons">perm_media</i>
+                                        @endif
                                             </div>
                                     </div>
                                     <div class="card-content">
