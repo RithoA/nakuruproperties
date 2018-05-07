@@ -17,7 +17,7 @@
                                             </div>
                                         </a>
                                         <div class="card-icon">
-                                        @if ($item->type == 'Prime')
+                                        @if ($post->type == 'Prime')
                                                  <i class="material-icons">grade</i>
                                         @else
                                                 <i class="material-icons">perm_media</i>
