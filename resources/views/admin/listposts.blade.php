@@ -264,7 +264,7 @@ function fillmodalData(details){
                      
                      $('.error').addClass('hidden');
                 $('.item' + data.id).replaceWith("<tr class='item" + data.id + "'><td class='text-center'>" +
-                        data.id + "</td><td class='text-center'><div class='card-image'><a><img style='height: 12vh; width: 15vw' class='img'src='" + data.coverimage + "'/></a></div></td><td class='text-center'>" + data.title + "</td><td class='text-center'>" +
+                        data.id + "</td><td class='text-center'><div class='card-image'><a><img style='height: 15vh; width: 12vw' class='img'src='" + data.coverimage + "'/></a></div></td><td class='text-center'>" + data.title + "</td><td class='text-center'>" +
                          data.description + "</td><td class='text-center'>" +
                          data.type + "</td><td class='text-center'>" +
                          data.price + "</td><td class='text-center'>" +

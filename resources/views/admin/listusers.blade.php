@@ -28,7 +28,7 @@
     <td class="text-center">{{$item->id}}</td>
     <td class="text-center"><div class="card-image">
                                             <a href="#pablo">
-                                                <img class="img" src="{{ $item->avatar }}" />
+                                                <img class="img" src="{{ $item->avatar }}" style="height: 15vh; width: 12vw"/>
                                             </a>
                                         </div></td>
     <td class="text-center">{{$item->email}}</td>
@@ -202,7 +202,7 @@ function fillmodalData(details){
                      
                      $('.error').addClass('hidden');
                 $('.item' + data.id).replaceWith("<tr class='item" + data.id + "'><td class='text-center'>" +
-                        data.id + "</td><td class='text-center'><div class='card-image'><a><img class='img'src='" + data.avatar + "'/></a></div></td><td class='text-center'>" + data.email + "</td><td class='text-center'>" +
+                        data.id + "</td><td class='text-center'><div class='card-image'><a><img style='height: 15vh; width: 12vw' class='img'src='" + data.avatar + "'/></a></div></td><td class='text-center'>" + data.email + "</td><td class='text-center'>" +
                          data.gender + "</td><td class='text-center'>" + data.type + "</td><td class='text-center'><button class='edit-modal btn btn-info' data-info='" + data.id+","+data.email+","+data.gender+","+data.type+"'><span class='material-icons'>edit</span></button> <button class='delete-modal btn btn-danger' data-info='" + data.id+","+data.email+","+data.gender+","+data.type+"'><span class='material-icons'>delete</span></button></td></tr>");
                  }}
         });
