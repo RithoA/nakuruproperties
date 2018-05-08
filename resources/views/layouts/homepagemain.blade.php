@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>Nakuru Properties</title>
-
+    <meta name="msvalidate.01" content="ABC8A8C1B92EF5137B44C3885D8BF818" />
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!--     Fonts and icons     -->

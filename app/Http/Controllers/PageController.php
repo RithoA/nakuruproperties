@@ -28,7 +28,7 @@ class PageController extends Controller
       
       $adverts = Advert::where('id', '!=', '1')->get();
       $homeadvert = Advert::where('id','1')->get();
-      $posts = Post::orderBy('created_at', 'desc')->paginate(8);
+      $posts = Post::orderByRaw('RAND()')->paginate(8);
       return view('homepage', compact('posts','avatar','user','profile','adverts','homeadvert'));
     }
 

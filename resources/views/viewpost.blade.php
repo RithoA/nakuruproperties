@@ -2,7 +2,7 @@
 
 @section('content')
 
-       <div id="app">
+       <div id="app"> 
       
         <div class="container-fluid">
         <div class="col-md-6 col-md-offset-2">
@@ -60,6 +60,7 @@
                 <div>
                         <h3 class="title">{{$post->title}}</h3>
                         <h4 class="title text-info">{{$post->description}}</h4>
+                        <h5 class="title">Price: Ksh {{ number_format($post->price) }}</h5>
                         <div class="card"> 
                         <div class="card-content">
                          {!! $post->body !!}

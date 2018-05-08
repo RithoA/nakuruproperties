@@ -59,6 +59,7 @@
                 <div>
                         <h3 class="title">{{$post->title}}</h3>
                         <h4 class="title text-info" style="color: #00bcd4;">{{$post->description}}</h4>
+                        <h5 class="title">Price: Ksh {{ number_format($post->price) }}</h5>
                         <div class="card"> 
                         <div class="card-content">
                          {!! $post->body !!}
