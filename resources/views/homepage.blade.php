@@ -109,7 +109,7 @@
              <div class="row collections" style="padding-top: 50px">
                                    @foreach($posts as $post)
                                     <div class="col-md-3">
-                                    <div class="card card-blog card-atv">
+                                    <div class="card card-blog">
                                     <div class="card-image">
                                         <a href="{{ route('ps.viewpost', $post->slug) }}">
                                             <div class="atvImg">
