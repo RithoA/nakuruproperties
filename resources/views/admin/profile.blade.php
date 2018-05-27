@@ -1,6 +1,5 @@
 @extends('layouts.citizenmain')
 @section('citizencontent')
-<div class="content">
 <div class="page-header header-filter" data-parallax="true" style="background-image: url('{{ Storage::url($profile->coverimage) }}');"></div>
  <div id="app">
     <div class="main main-raisedprofile">
@@ -87,6 +86,6 @@
             </div>
         </div>
     </div>
-</div>
+
     
 @endsection

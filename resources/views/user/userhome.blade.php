@@ -1,6 +1,5 @@
 @extends('layouts.usermain')
 @section('citizencontent')
-<div class="content">
  <div id="app">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <div class="carousel slide" data-ride="carousel">
@@ -161,6 +160,5 @@
                                     </div>
                                     </div>
           </div>
-        </div>            
-    </div>
+        </div>
     @endsection

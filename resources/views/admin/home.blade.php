@@ -1,7 +1,6 @@
 @extends('layouts.citizenmain')
 @section('citizencontent')
  <div id="app">
-
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <div class="carousel slide" data-ride="carousel">
 
@@ -15,7 +14,7 @@
                 </ol> -->
 
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner">
+               <div class="carousel-inner">
                 @foreach($homeadvert as $advert)
                 @if($advert->id == 1)
                     <div class="item active">
@@ -132,6 +131,7 @@
                                         <div class="footer">
                                         <div class="author">
                                             <a class="card-title" href="{{ route('ps.viewpost', $post->slug) }}">Ksh {{ number_format($post->price) }}</a>
+                                        &middot;
                                         </div>
                                         </div>
                                         <div class="footer">
@@ -142,7 +142,7 @@
                                             </div>
                                            <div class="stats" style="margin-bottom: 10px">
                                              <!-- <a style="color: gray"><i>{{$post->created_at->diffForHumans()}}</i></a>&middot; -->
-                                               @if (Auth::check())
+                                              @if (Auth::check())
                                              <favorite :post={{ $post->id }} :favorited={{ $post->favorited() ? 'true' : 'false' }}></favorite> 
                                              @endif&middot;
                                              <commentcount :post="{{$post->id}}"></commentcount> &middot;
@@ -153,10 +153,12 @@
                                     </div>
                                     </div>
                                     @endforeach
-                                    </div>
-                                   {{$posts->render()}}
+                                    </div> 
+                                    <ul class="pagination pagination-primary">
+                                    {{$posts->links()}}
+                                    </ul>
                                     </div>
                                     </div>
           </div>
-        </div> 
+        </div>            
     @endsection
