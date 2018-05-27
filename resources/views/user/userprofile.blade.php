@@ -56,7 +56,9 @@
                                     <div class="col-md-5">
                                         <div class="card-image">
                                             <a href="{{ route('ps.viewpost', $post->slug) }}">
-                                                <img class="img" src="{{ $post->coverimage }}" style="min-height: 17vh; max-height: 17vh" />
+                                               <div class="atvImg">
+                                                <img class="img" src="{{ $post->coverimage }}" style="max-height: 25vh" />
+                                            </div>
                                             </a>
                                         </div>
                                         <div class="card-content">

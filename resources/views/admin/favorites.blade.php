@@ -2,14 +2,14 @@
 @section('citizencontent')
 <div class="content">
  <div id="app">
- <div class="main main-raisedlist">
+ <div class="main main-raisedresults">
 
                                     <div class="profile-content">
                                     <div class="container-fluid">
                                     <div class="row collections" style="padding-top: 50px">
                                     @forelse($myFavorites as $post)
                                     <div class="col-md-6 col-lg-4">
-                                    <div class="card card-blog card-atv">
+                                    <div class="card card-blog">
                                     <div class="card-image">
                                         <a href="{{ route('ps.viewpost', $post->slug) }}">
                                             <div class="atvImg">
