@@ -103,7 +103,7 @@
                 </a>
             </div>
         </div>
-        <div class="main main-raisedresults">
+        <div class="main main-raisedhome">
             <div class="profile-content">
                                     <div class="container-fluid">
                                     <div class="row collections" style="padding-top: 50px">
