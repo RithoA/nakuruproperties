@@ -64,7 +64,18 @@ class AdvertsController extends Controller
   public function postDeleteadvert(Request $request)
     {
 
-      Advert::find ( $request->id )->delete();
+
+      $photo = Advert::where('id', $request->id)->value('coverimage');
+      $photo = basename($photo);
+      $photo =(public_path('/storage/images/photo/'.$photo));
+      if(file_exists($photo))
+       {
+
+        unlink($photo);
+
+        }
+
+       Advert::find ( $request->id )->delete();
        return response ()->json ();
    }
 

@@ -210,7 +210,32 @@ class PostsController extends Controller
   public function postDeletepost(Request $request)
     {
 
-      Post::find ( $request->id )->delete();
+      $postphotos = Postphoto::where('post_id', $request->id)->pluck('photo');
+      foreach($postphotos as $postphoto){
+
+      $postphoto = basename($postphoto);
+      $postphoto =(public_path('/storage/images/postphoto/'.$postphoto));
+      if(file_exists($postphoto))
+       {
+
+        unlink($postphoto);
+
+        }
+
+    }
+      Postphoto::where('post_id', $request->id)->delete();
+
+      $photo = Post::where('id', $request->id)->value('coverimage');
+      $photo = basename($photo);
+      $photo =(public_path('/storage/images/photo/'.$photo));
+      if(file_exists($photo))
+       {
+
+        unlink($photo);
+
+        }
+       Post::find ( $request->id )->delete();
+
        return response ()->json ();
      
     }
